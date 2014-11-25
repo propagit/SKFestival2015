@@ -41,6 +41,7 @@
 </script> 
 
 <body>
+<div id="pattern">
 	<div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
 		<div class="navbar-inner">
 			<div class="container max-container pale-bg">

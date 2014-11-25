@@ -2,7 +2,11 @@
 @font-face {
     font-family: AlphaEcho;
 	src:url(../font/alph.ttf);
-}  
+} 
+*{
+	margin: 0 auto;
+	padding: 0;
+} 
 /* CSS Document */
 #wholea{
 	display: block;
@@ -16,11 +20,15 @@
     background-position:  top;
 }
 body {
-     background-image: url(../img/body_bg.jpg);
+     background-image: url(../img/body-gradient.jpg);
      background-repeat:repeat;
      font-family:  'Raleway',  sans-serif;
      background-position:  top;
-     background-color:  #e23d38;
+     /*<!--background-color:  #e23d38;-->*/
+}
+#pattern{
+	background-image: url(../img/body-pattern.png);
+    background-repeat:repeat;
 }
 .white-container {
     background-color:#fff6dc;	

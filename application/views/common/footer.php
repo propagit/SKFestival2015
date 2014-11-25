@@ -62,7 +62,7 @@
         </div>
 
 
-    
+</div><!--#pattern-->
 </body>
 <script>
 $(document).ready(function() {
