@@ -1,0 +1,43 @@
+*
+{
+	padding:0;
+	margin:0;
+}
+.heading_content_page
+{
+	font-size: 36px; 
+	font-weight:500;
+	line-height:40px; 
+	color:#f18800;
+	font-family:'Raleway', sans-serif;
+}
+.subheading_content_page
+{
+	font-size: 18px;
+	font-weight:500; 
+	color:#f18800;
+	font-family:'Raleway', sans-serif;
+	line-height:22px;
+}
+.subheading2_content_page
+{
+	font-size: 14px;font-weight:500; color:#dc013d;font-family:'Raleway', sans-serif; line-height:16px;
+}
+.text_content_page
+{
+	font-size: 14px;font-weight:300; color:#231F20; font-family:'Raleway', sans-serif; letter-spacing: 0.25px; line-height: 18px;
+}
+a{
+	color:#f18800;
+}
+a:hover{
+	color:#f18800;
+}
+
+.black_underline_link
+{
+	color:#231F20;
+	text-decoration:underline;
+	font-family:'Raleway', sans-serif;
+	font-size: 14px;font-weight:300;
+}
