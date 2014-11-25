@@ -29,6 +29,7 @@ body {
 #pattern{
 	background-image: url(../img/body-pattern.png);
     background-repeat:repeat;
+	padding-top:53px;
 }
 .white-container {
     background-color:#fff6dc;	
@@ -147,7 +148,7 @@ input[type="text"]:-ms-input-placeholder {
 }
 /* constants */
 .nav_offset_padding {
-     margin-top: 85px;
+     margin-top: 30px;
 }
 .logo-banner{
 		
@@ -969,8 +970,9 @@ input[type="text"]:-ms-input-placeholder {
 	}
 	.navbar-fixed-top {
 		 margin-bottom: 0;
+		 position:fixed;
 	}
-	.nav_offset_padding {
+	#pattern {
 		 margin-top: 0;
 	}
 	.header-menu-title {
@@ -1204,6 +1206,9 @@ input[type="text"]:-ms-input-placeholder {
 	.name-on-top{color: #FFFFFF;font-size: 18px;font-weight: 700;margin-top: 96px;position: absolute;text-align: center;/*width: 38.5%;*/width: 42%;}
 }
 @media (max-width: 767px) {
+	#pattern{
+		padding-top:0;	
+	}
 	.sk-year-banner{
 		margin-top:20px;	
 	}
