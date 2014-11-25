@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="description" content="" />
 <meta name="google-site-verification" content="yVJdVcuk3lQ2SICu2kbtPOxynkk-zLfybxZlYkT0y3k" />
-<title>	St Kilda Festival 2014</title>
+<title>	St Kilda Festival 2015</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="<?=base_url()?>css/bootstrap.css" rel="stylesheet" media="screen">
 <link href="<?=base_url()?>css/bootstrap-responsive.css" rel="stylesheet" media="screen">
