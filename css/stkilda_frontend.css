@@ -65,19 +65,19 @@ input,  button,  select,  textarea {
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
 }
-#top-navigation {
+#top-navigation ul.nav{
     color:  #6e6e6e;
     margin-top: 10px;
     float: right;
     margin-bottom: 10px;
 	margin-right:0;
 }
-#top-navigation li {
+#top-navigation ul li {
     line-height: 30px;
     font-size: 16px;
 	padding-left:8px;
 }
-#top-navigation li a {
+#top-navigation ul li a {
      padding: 0;
      margin: 0;
      color: inherit;
@@ -145,6 +145,45 @@ input[type="text"]:-ms-input-placeholder {
     	list-style:  none outside none;
     margin: 0px;
     width: 100% !important;
+}
+#menu-for-phone{
+	margin-left: -25px !important;
+	margin-right: -25px !important;	
+}
+.mob-social{
+	margin:20px 0;	
+}
+.mob-social ul li a{
+	padding:0 10px 0 0 !important;
+}
+.mob-search-box{
+	margin:5px 0 0px 0;
+}
+.mob-search-input{
+	border-radius: 0 !important;
+	width: 100% !important;
+	font-size:18px !important;
+	color:#000 !important;
+	padding:5px 20px !important;
+	box-sizing:border-box;
+	height:40px !important;
+}
+.mob-search-input::-webkit-input-placeholder {
+  	color: #000 !important;
+	font-weight:500;
+}
+
+.mob-search-input:-moz-placeholder { /* Firefox 18- */
+  	color: #000 !important;
+	font-weight:500;
+}
+.mob-search-input::-moz-placeholder {  /* Firefox 19+ */
+   color: #000 !important;
+   font-weight:500;
+}
+.mob-search-input:-ms-input-placeholder {  
+   color: #000 !important; 
+   font-weight:500;
 }
 /* constants */
 .nav_offset_padding {
@@ -564,9 +603,9 @@ input[type="text"]:-ms-input-placeholder {
 	padding-right:0 ;	
 }
 .navbar-custom .navbar-inner .container{
-	padding-left:25px;
-	padding-right:25px;
-	box-sizing: border-box;	
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+	box-sizing: border-box;
 }
 #stkildafestival_banners .carousel-inner > .item img{
 	/*min-height:340px;	*/
@@ -602,6 +641,7 @@ input[type="text"]:-ms-input-placeholder {
 	color:#fff;
 	font-size:35px;
 	cursor:pointer;	
+	padding-left:25px;
 }
 #menu-for-phone{
 	margin-top:4px;	
@@ -1273,43 +1313,30 @@ input[type="text"]:-ms-input-placeholder {
 }
 .header-menu-phone .top-menu
  {
-    
 	width: 100%;
-    
-	height: 35px;
-    
-	border: 1px solid #f6ce9a;
-    
-	background-color:  #f18800;
-    
+	background-color:none;
 	color: #fff;
-    
-	font-size: 20px;
-    
-	margin-bottom: 10px;
-    
+	font-size: 18px;
 	text-transform:  uppercase;
-    
+    font-weight:500;
+	padding:10px 0;
+	cursor:pointer;	
 }
 .header-menu-phone .subtop-menu
  {
-    
 	width: 100%;
-    
-	height: 35px;
-    
-	border: 1px solid #e3996f;
-    
-	background-color:  #ea6b24;
-    
+	background-color:none;
 	color: #fff;
+	font-size: 18px;
+	padding:10px 0;
+    text-transform:  uppercase;
+	font-weight:500;
+	cursor:pointer;
     
-	font-size: 16px;
-    
-	margin-bottom: 10px;
-    
-	text-transform:  uppercase;
-    
+}
+.header-menu-phone .mob-subnav{
+	margin-left:20px;
+	cursor:pointer;
 }
 #search-phone-wrapper
  {
