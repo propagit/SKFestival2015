@@ -1,5 +1,5 @@
 # Ignore files / Folder
 
-#application/config
-#application/models/cute_model.php
-#application/models/cute_model2.php
+application/config/database.php
+application/models/cute_model.php
+application/models/cute_model2.php
