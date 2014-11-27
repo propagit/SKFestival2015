@@ -76,15 +76,15 @@ class News_sticker extends CI_Controller {
 			
 			$width = $data['upload_data']['image_width'];
 			$height = $data['upload_data']['image_height'];
-			if ($width > 1180 || $height > 410) {
+			if ($width > 768 || $height > 464) {
 				$config = array();
 				// Resize image
 				$config['source_image'] = "./photos/news_sticker/".$image;
 				$config['create_thumb'] = TRUE;
 				$config['maintain_ratio'] = FALSE;
 				$config['quality'] = 100;
-				$config['width'] = 1180; //old 724
-				$config['height'] = 410;
+				$config['width'] = 768; //old 724
+				$config['height'] = 464;
 				$config['master_dim'] = 'auto';
 				$this->load->library('image_lib');
 				$this->image_lib->clear();
@@ -190,7 +190,7 @@ class News_sticker extends CI_Controller {
 			
 			$width = $data['upload_data']['image_width'];
 			$height = $data['upload_data']['image_height'];
-			if ($width > 1180 || $height > 410) {
+			if ($width > 768 || $height > 464) {
 				$config = array();
 				// Resize image
 				$config['source_image'] = "./photos/news_sticker/".$image;
@@ -198,12 +198,12 @@ class News_sticker extends CI_Controller {
 				$config['maintain_ratio'] = FALSE;
 				$config['quality'] = 100;
 				if ($width < $height) {		
-				$config['width'] = 1180;
-				$config['height'] = intval(410 * ($height/$width));
+				$config['width'] = 768;
+				$config['height'] = intval(464 * ($height/$width));
 			    
 			} else {				
-				$config['width'] = intval(1180 * ($width/$height));
-				$config['height'] = 410;
+				$config['width'] = intval(768 * ($width/$height));
+				$config['height'] = 464;
 			}
 				$this->load->library('image_lib');
 				$this->image_lib->clear();
@@ -215,14 +215,14 @@ class News_sticker extends CI_Controller {
 						# Crop thumbnail			
 			   $config['image_library'] = 'GD2';
 			   $config['source_image'] = "./photos/news_sticker/".$image;
-			    $config['width'] = 1180;
-				$config['height'] = 410;
+			    $config['width'] = 768;
+				$config['height'] = 464;
 			   if ($width < $height) {	
 				$config['x_axis'] = 0;
-				$config['y_axis'] = intval(410 * ($height/$width)) - 351;
+				$config['y_axis'] = intval(464 * ($height/$width)) - 361;
 			   }
 			   else {	
-				$config['x_axis'] =  intval(1180 * ($width/$height)) - 1170;
+				$config['x_axis'] =  intval(768 * ($width/$height)) - 758;
 				$config['y_axis'] = 0;
 			   }
 			    $config['maintain_ratio'] = FALSE;

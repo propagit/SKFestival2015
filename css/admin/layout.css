@@ -784,6 +784,9 @@ float: left;
 width:355px;
 height:172px;
 }
+.banner .thumb img{
+	width:98%;	
+}
 .banner .url {
 border-color: #666;
 border-style: dotted dotted dotted none;

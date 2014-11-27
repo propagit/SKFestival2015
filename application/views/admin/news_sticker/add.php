@@ -30,7 +30,7 @@ dl dd { float:left; }
         <dl class="news"><dt>Link to</dt><dd><input type="text" class="medium" name="url" id="url" /></dd></dl>
         <div style="clear:both"></div>
     	<dl class="news"><dt>Publish</dt><dd><input type="checkbox" name="published" /></dd></dl></dl>
-    	<dl class="news"><dt>Preview Image</dt><dd><input type="file" name="userfile" /> <i><strong>(1180px x 410px)</strong></i></dd></dl>
+    	<dl class="news"><dt>Preview Image</dt><dd><input type="file" name="userfile" /> <i><strong>(768px x 464px)</strong></i></dd></dl>
     	<dl></dl>
     	
 		</form>
