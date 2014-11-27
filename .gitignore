@@ -3,3 +3,5 @@
 application/config/database.php
 application/models/cute_model.php
 application/models/cute_model2.php
+js/cute1
+js/cute

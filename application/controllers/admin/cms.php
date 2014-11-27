@@ -14,6 +14,7 @@ class Cms extends CI_Controller
 		$this->load->model('Cute_model');
 		$this->load->model('Cute_model2');
 		$this->load->model('Music_band_model'); 		
+		error_reporting(E_ALL);
 	}
 	
 	#Dashboard
