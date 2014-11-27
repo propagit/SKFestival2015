@@ -26,7 +26,7 @@ function validateEmailRight()
 <div id="under-cons-wrapper">
 	&nbsp;
 	<div id="top-text">THIS WEBSITE<br/>IS UNDER<br/>CONSTRUCTION</div>
-	<div id="bottom-text">THE FULL PROGRAM<br/>FOR THE 2014 ST KILDA<br/>FESTIVAL LAUNCHES<br/>ON 6 JANUARY</div>
+	<div id="bottom-text">THE FULL PROGRAM<br/>FOR THE 2015 ST KILDA<br/>FESTIVAL LAUNCHES<br/>ON 6 JANUARY</div>
 </div>
 
 <!-- <div class="today">WHAT'S ON TODAY</div>
