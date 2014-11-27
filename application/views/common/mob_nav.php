@@ -101,6 +101,7 @@ $(function(){
                       </div>
                   <?
               }
+			  
               if(count($links) > 0)
               {
               ?>
@@ -120,6 +121,33 @@ $(function(){
                   <div onclick="window.location='<?=$url?>'" class="subtop-menu">
                       <?=$link['name']?>
                   </div>
+                  
+                  <?php
+				  	# sub sub nav
+					$child_links = $this->Menu_model->get_child_links($link['id']); 
+				  	if($child_links != NULL){
+                                           echo '<div class="mob-sub-sub-nav-wrap">';
+                                                        foreach($child_links as $c){
+                                                            $url2 = '#';
+                                                            if($c['url'] != ''){
+                                                                if(is_numeric($c['url'])){
+                                                                   $url2 = base_url().'page/pages/'.$c['url'];
+                                                                }else{
+                                                                   $url2 = $c['url'];
+                                                                }
+                                                             }
+                                                            if(strpos($url2,'Flipbook') > 0){
+                                                                echo '<a class="mob-sub-sub-nav" target="_blank" href="'.$url2.'">'.$c['name'].'</a>';
+                                                            }else{
+                                                                echo '<a class="mob-sub-sub-nav" href="'.$url2.'">'.$c['name'].'</a>';
+                                                            }
+                                                        }//foreach $child_links
+                                                    
+                                            echo '</div>';
+                                       }
+                                       
+                  ?>
+                  
                   <?
                   }
                   ?>

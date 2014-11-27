@@ -26,14 +26,16 @@
                 
                 
                     <div class="span12 remove-gutters">
-                        <div class="footer_text_sponsor">2014 SPONSORED BY</div>
+                    	<?php if(0){ ?>
+                        <!--<div class="footer_text_sponsor">2014 SPONSORED BY</div>
                         <div class="all-sponsors hidden-phone" style="text-align: center;" >
                         	
                         	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/promotional_colour-(vector).png" style="margin-right:100px;"/>
                         	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/Arts_Victoria_Logo.png" style="margin-right:100px;"/>
                         	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/7MATE_LOGO_CMYK.png" style="margin-right:100px;"/>
                         	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/NOVA_HERO_squared.png" />
-                        </div>
+                        </div>-->
+                        <?php } ?>
                         
                         <div class="hidden-phone quick-links">
                             <hr class="footer-hr" />
@@ -53,7 +55,8 @@
                             </div>
                             
                             <hr class="footer-hr" />
-                            <div class="footer_text_design">St Kilda Festival Image Design Competition Winner: Sam Kenneally</div>
+                            <div class="footer_text_design">
+                            	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/promotional_colour-(vector).png" style="margin-right:100px;"/> St Kilda Festival Image Design Competition Winner: Sam Kenneally</div>
                             <br />
                             <br />
                         </div>
