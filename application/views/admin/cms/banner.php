@@ -25,7 +25,7 @@ function deletebanner(id) {
 
 <div class="box">
 	<h3>Add New Ad</h3>
-    <p>Add new banner by browsing your computer and uploading them. Please upload an image with size of <b>355 pixel width</b> and <b>172 pixel height</b> for the best view.</p><br />
+    <p>Add new banner by browsing your computer and uploading them. Please upload an image with size of <b>1180 pixel width</b> and <b>85 pixel height</b> for the best view.</p><br />
     <form method="post" enctype="multipart/form-data" action="<?=base_url()?>admin/cms/addbanner">
     <input type="file" name="banner" />
     <p><br /><input type="submit" class="button rounded" value="Upload" /></p>

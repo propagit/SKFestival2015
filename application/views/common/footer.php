@@ -56,7 +56,7 @@
                             
                             <hr class="footer-hr" />
                             <div class="footer_text_design">
-                            	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/promotional_colour-(vector).png" style="margin-right:100px;"/> St Kilda Festival Image Design Competition Winner: Sam Kenneally</div>
+                            	<img class="img-footer-sponsor" alt="" src="<?=base_url()?>images/promotional_colour-(vector).png" style="margin-right:100px;"/> St Kilda Festival Image Design Competition Winner: CONSUELO FERNÃNDEZ-ORTIZ</div>
                             <br />
                             <br />
                         </div>

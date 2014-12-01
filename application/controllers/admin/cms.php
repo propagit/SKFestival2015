@@ -1403,8 +1403,8 @@ class Cms extends CI_Controller
 		$config['upload_path'] = $path;
 		$config['allowed_types'] = 'gif|jpg|png|swf';
 		$config['max_size']	= '4096'; // 1 MB
-		$config['max_width']  = '1000';
-		$config['max_height']  = '1000';
+		$config['max_width']  = '1180';
+		$config['max_height']  = '85';
 		$config['overwrite'] = FALSE;
 		$config['remove_space'] = TRUE;
 		
@@ -1427,8 +1427,8 @@ class Cms extends CI_Controller
 				$config['create_thumb'] = TRUE;
 				$config['maintain_ratio'] = FALSE;
 				$config['quality'] = 100;
-				$config['width'] = 355;
-				$config['height'] = 172;
+				$config['width'] = 0;
+				$config['height'] = 0;
 				$config['master_dim'] = 'auto';
 				$this->load->library('image_lib');
 				$this->image_lib->clear();
