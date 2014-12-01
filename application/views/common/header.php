@@ -55,7 +55,7 @@
                 
             		<div class="nav-lt-box span6 remove-gutters hidden-phone">
                 	<button class="btn btn-alt">Support The Festival</button>
-                    <input type="text" id="head-subscribe-input" placeholder="SUBSCRIBE">
+                    <input type="text" id="head-subscribe-input" placeholder="SUBSCRIBE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SUBSCRIBE'">
                		</div>
                     
                 	<div class="social_icons span6 remove-gutters pull hidden-phone" id="top-navigation">
