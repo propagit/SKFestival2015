@@ -620,6 +620,7 @@ input[type="text"]:-ms-input-placeholder {
 .quick-links .footer_text{
 	text-align:center;
 	text-transform:uppercase;
+	font-weight:500;
 }
 .footer_text a:hover{
 	text-decoration:none;	

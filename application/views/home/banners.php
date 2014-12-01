@@ -9,7 +9,7 @@
 						<a href="'.$alls['url'].'">
 							<img src="'.base_url().'photos/news_sticker/'.$alls['image'].'" />
 						
-							<div class="item_text_box">
+							<div class="item_text_box hide">
 								<div class="item_text_overlay"></div>
 								<div class="item_txt">
 									<span class="item_heading">'.$alls['heading'].' - '.$alls['subheading'].'</span>

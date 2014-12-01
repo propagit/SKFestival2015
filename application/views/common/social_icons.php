@@ -24,7 +24,7 @@
          </a>
     </li>
     <li>
-         <a href="#" target="_blank">
+         <a href="http://instagram.com/stkildafestival" target="_blank">
             <span class="fa-stack">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-instagram fa-stack-1x txt-white"></i>
