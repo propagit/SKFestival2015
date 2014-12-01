@@ -428,7 +428,7 @@ class Cms extends CI_Controller
 		);
 		$gid = $this->Gallery_model->create_gallery($data);
 		
-		$path = "/home/stkildaf/public_html/2014/uploads/galleries";
+		$path = "/home/stkildaf/public_html/2015/uploads/galleries";
 		$newfolder = md5('cdkgallery'.$gid);
 		$dir = $path."/".$newfolder;
 		if(!is_dir($dir))
@@ -488,7 +488,7 @@ class Cms extends CI_Controller
 	{
 		$this->check_authentication();
 		$gid = $_POST['gallery_id'];		
-		$config['upload_path'] = "/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid);
+		$config['upload_path'] = "/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid);
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '4096'; // 4 MB
 		$config['max_width']  = '2000';
@@ -524,7 +524,7 @@ class Cms extends CI_Controller
 				{
 				$config = array();
 				// Resize image
-				$config['source_image'] = "/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name;
+				$config['source_image'] = "/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name;
 				$config['create_thumb'] = TRUE;
 				$config['maintain_ratio'] = TRUE;
 				$config['quality'] = 100;
@@ -535,16 +535,16 @@ class Cms extends CI_Controller
 				$this->image_lib->clear();
 				$this->image_lib->initialize($config);
 				$this->image_lib->resize();
-				unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name);
-				rename("/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/".$data['upload_data']['raw_name']."_thumb".$data['upload_data']['file_ext'],"/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name);
+				unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name);
+				rename("/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/".$data['upload_data']['raw_name']."_thumb".$data['upload_data']['file_ext'],"/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name);
 				$this->image_lib->clear();
 			    }	
 			}
 			// Thumbnail creation
 			$config = array();
-			$config['source_image'] = "/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name;
+			$config['source_image'] = "/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/".$file_name;
 			$config['create_thumb'] = TRUE;
-			$config['new_image'] = "/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name;
+			$config['new_image'] = "/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name;
 			$config['maintain_ratio'] = TRUE;
 			$config['quality'] = 100;
 			  if ($width < $height) 
@@ -601,12 +601,12 @@ class Cms extends CI_Controller
 				$this->session->set_flashdata('error_addphoto',$this->upload->display_errors());	
 			}
 			
-			rename("/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$data['upload_data']['raw_name']."_thumb".$data['upload_data']['file_ext'],"/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name);
+			rename("/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$data['upload_data']['raw_name']."_thumb".$data['upload_data']['file_ext'],"/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name);
 			$this->image_lib->clear();
 			
 			// Crop thumbnail			
 			$config['image_library'] = 'GD2';
-			$config['source_image'] = "/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name;
+			$config['source_image'] = "/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name;
 			
 			$config['width'] = 108;
 			$config['height'] = 69;
@@ -621,8 +621,8 @@ class Cms extends CI_Controller
 			{
 				$this->session->set_flashdata('error_addphoto',$this->upload->display_errors());
 			}
-			unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name);
-			rename("/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$data['upload_data']['raw_name']."_thumb".$data['upload_data']['file_ext'],"/home/stkildaf/public_html/2014/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name);
+			unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name);
+			rename("/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$data['upload_data']['raw_name']."_thumb".$data['upload_data']['file_ext'],"/home/stkildaf/public_html/2015/uploads/galleries/".md5('cdkgallery'.$gid)."/thumbnails/".$file_name);
 		  
 			$this->session->set_flashdata('addphoto_id',$pid);
 			$this->session->set_flashdata('addphoto_src',$file_name);
@@ -637,17 +637,17 @@ class Cms extends CI_Controller
 		$photos = $this->Gallery_model->get_photos($id);
 		foreach($photos as $photo) {
 			if ($this->Gallery_model->delete_photo($photo['id'])) {
-				unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$id)."/".$photo['name']);
-				unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$id)."/thumbnails/".$photo['name']);				
+				unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$id)."/".$photo['name']);
+				unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$id)."/thumbnails/".$photo['name']);				
 			}
 		}
 		//print_r('test');
-		unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$id)."/index.html");
-		unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$id)."/thumbnails/index.html");
+		unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$id)."/index.html");
+		unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$id)."/thumbnails/index.html");
 		
 		if ($this->Gallery_model->delete_gallery($id)) {
-			rmdir("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$id)."/thumbnails");
-			rmdir("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$id));
+			rmdir("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$id)."/thumbnails");
+			rmdir("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$id));
 			//$this->Page_model->reset_gallery($id);
 			print "Ok";
 		} 
@@ -674,8 +674,8 @@ class Cms extends CI_Controller
 			if ($this->Gallery_model->delete_photo($id)) 
 			{
 				$this->Gallery_model->reset_thumbnail($id);
-				unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$photo['gallery_id'])."/".$photo['name']);
-				unlink("/home/stkildaf/public_html/2014/uploads/galleries/".md5("cdkgallery".$photo['gallery_id'])."/thumbnails/".$photo['name']);
+				unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$photo['gallery_id'])."/".$photo['name']);
+				unlink("/home/stkildaf/public_html/2015/uploads/galleries/".md5("cdkgallery".$photo['gallery_id'])."/thumbnails/".$photo['name']);
 				
 			} else {
 				
@@ -1253,8 +1253,8 @@ class Cms extends CI_Controller
     {
 		$this->check_authentication();
         $news=$this->Menu_model->getnews($id);
-		//if($news['media1']){unlink("/home/stkildaf/public_html/2014/uploads/news/".$news['media1']);}
-		//if($news['media2']){unlink("/home/stkildaf/public_html/2014/uploads/news/".$news['media2']);}
+		//if($news['media1']){unlink("/home/stkildaf/public_html/2015/uploads/news/".$news['media1']);}
+		//if($news['media2']){unlink("/home/stkildaf/public_html/2015/uploads/news/".$news['media2']);}
 		if($this->Menu_model->deletenews($id))
         {            
             redirect('admin/cms/listnews');
@@ -1264,7 +1264,7 @@ class Cms extends CI_Controller
 	{
 		$this->check_authentication();
 		if ($news=$this->Menu_model->getnews($id)) {
-			unlink("/home/stkildaf/public_html/2014/uploads/news/".$news['media1']);
+			unlink("/home/stkildaf/public_html/2015/uploads/news/".$news['media1']);
 			$data=array(				
 				'media1' => '',				
 				'modified' => date('Y-m-d H:i:s') 
@@ -1285,7 +1285,7 @@ class Cms extends CI_Controller
 	{
 		$this->check_authentication();
 		if ($news=$this->Menu_model->getnews($id)) {
-			unlink("/home/stkildaf/public_html/2014/uploads/news/".$news['media2']);
+			unlink("/home/stkildaf/public_html/2015/uploads/news/".$news['media2']);
 			$data=array(				
 				'media2' => '',				
 				'modified' => date('Y-m-d H:i:s') 
@@ -1556,7 +1556,7 @@ class Cms extends CI_Controller
 		{
 			$this->load->helper('file');
 			$folder = md5('band'.$id);
-	        delete_files('/home/stkildaf/public_html/2014/uploads/bands/'.$folder, TRUE);
+	        delete_files('/home/stkildaf/public_html/2015/uploads/bands/'.$folder, TRUE);
 		    print 'Ok';
 		}
 		else
@@ -1569,7 +1569,7 @@ class Cms extends CI_Controller
 		$this->check_authentication();
 		$id = $_POST['band_id'];
 		$dir = md5("band".$id);
-	    $path = "/home/stkildaf/public_html/2014/uploads/bands/".$dir."/";	
+	    $path = "/home/stkildaf/public_html/2015/uploads/bands/".$dir."/";	
 		$config['upload_path'] = $path;
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '4096'; // 4 MB
@@ -1733,7 +1733,7 @@ class Cms extends CI_Controller
 		$this->check_authentication();
 		$id = $_POST['band_id'];
 		 $dir = md5("band".$id);
-		$path = "/home/stkildaf/public_html/2014/uploads/bands/".$dir."/music";	
+		$path = "/home/stkildaf/public_html/2015/uploads/bands/".$dir."/music";	
 		$config['upload_path'] = $path;
 		$config['allowed_types'] = 'mp3';
 		$config['max_size']	= '8192'; // 8 MB
@@ -1753,7 +1753,7 @@ class Cms extends CI_Controller
 		
 		if(isset($_POST['updateMusic1']))
 		{
-			$xmlFile = "/home/stkildaf/public_html/2014/uploads/bands/".$dir."/music/music.xml";
+			$xmlFile = "/home/stkildaf/public_html/2015/uploads/bands/".$dir."/music/music.xml";
 					    $fh = fopen($xmlFile,'w') or die("Couldn't open file to write");
 						fwrite($fh,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
 		                fwrite($fh,"<songs>\n");
@@ -1766,7 +1766,7 @@ class Cms extends CI_Controller
 		}
 		else if(isset($_POST['updateMusic2']))
 		{
-			$xmlFile = "/home/stkildaf/public_html/2014/uploads/bands/".$dir."/music/music2.xml";
+			$xmlFile = "/home/stkildaf/public_html/2015/uploads/bands/".$dir."/music/music2.xml";
 					    $fh = fopen($xmlFile,'w') or die("Couldn't open file to write");
 						fwrite($fh,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
 		                fwrite($fh,"<songs>\n");
@@ -1900,7 +1900,7 @@ class Cms extends CI_Controller
 					   'created' => $created
 					   );
 		$id = $this->Music_band_model->create_band($data);
-		$path = "/home/stkildaf/public_html/2014/uploads/bands";
+		$path = "/home/stkildaf/public_html/2015/uploads/bands";
 		$newfolder = md5('band'.$id);
 		$dir = $path."/".$newfolder;
 		if(!file_exists($dir))
