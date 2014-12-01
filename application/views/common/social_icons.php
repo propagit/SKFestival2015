@@ -31,7 +31,7 @@
             </span>
          </a>
     </li>
-    <li class="hidden-phone">
+    <li class="hidden-phone hidden-desktop">
         <input type="text" id="search-input" placeholder="search"/>
     </li>
 </ul>
