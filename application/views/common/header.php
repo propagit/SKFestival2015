@@ -54,8 +54,10 @@
                     <!--mob nav ends-->
                 
             		<div class="nav-lt-box span6 remove-gutters hidden-phone">
-                	<button class="btn btn-alt">Support The Festival</button>
-                    <input type="text" id="head-subscribe-input" placeholder="SUBSCRIBE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SUBSCRIBE'">
+                	<button class="btn btn-alt" onClick="javascript:window.location='https://shop.stkildafestival.com.au'">Support The Festival</button>
+                    <?php if(0){ ?>
+                   <!-- <input type="text" id="head-subscribe-input" placeholder="SUBSCRIBE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SUBSCRIBE'">-->
+                    <?php } ?>
                		</div>
                     
                 	<div class="social_icons span6 remove-gutters pull hidden-phone" id="top-navigation">
