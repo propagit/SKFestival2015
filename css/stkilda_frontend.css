@@ -476,10 +476,11 @@ input[type="text"]:-ms-input-placeholder {
 	font-size: 18px;
     
 	text-align:  center;
+	padding:93px 0;
     
-	padding-top: 40px;
+	/*padding-top: 40px;
     
-	padding-bottom: 60px;
+	padding-bottom: 60px;*/
     
 }
 #under-cons-wrapper #top-text
