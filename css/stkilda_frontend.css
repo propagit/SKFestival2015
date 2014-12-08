@@ -716,7 +716,7 @@ input[type="text"]:-ms-input-placeholder {
 }
 .stkilda_nav .row-fluid .span2 {
      padding: 15px 43px 22px 43px;
-     padding: 15px 42px 22px 42px /9;
+     padding: 15px 40px 22px 40px /9;
      width: auto;
 }
 /*html[data-useragent*='MSIE 10.0'] .stkilda_nav .row-fluid .span2 {
