@@ -1,10 +1,10 @@
-RewriteEngine on
+#RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php/$1 [L]
 
-RewriteCond %{HTTP_HOST} ^stkildafestival\.com\.au\/2015$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.stkildafestival\.com\.au\/2015$
-RewriteRule ^/?$ "http\:\/\/stkildafestival\.com\.au\/2015\-s2\/" [R=301,L]
+#RewriteCond %{HTTP_HOST} ^stkildafestival\.com\.au\/2015$ [OR]
+#RewriteCond %{HTTP_HOST} ^www\.stkildafestival\.com\.au\/2015$
+#RewriteRule ^/?$ "http\:\/\/stkildafestival\.com\.au\/2015\-s2\/" [R=301,L]
 
