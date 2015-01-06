@@ -1,5 +1,5 @@
 <?php
-header('Location: http://www.stkildafestival.com.au/2015-s2');
+header('Location: http://stkildafestival.com.au/2015-s2');
 exit;
 /*
  *---------------------------------------------------------------
