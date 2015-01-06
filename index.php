@@ -1,6 +1,6 @@
 <?php
-header('Location: http://stkildafestival.com.au/2015-s2/');
-die();
+#header('Location: http://stkildafestival.com.au/2015-s2/');
+#die();
 /*
  *---------------------------------------------------------------
  * PHP ERROR REPORTING LEVEL
